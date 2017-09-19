@@ -7,5 +7,6 @@ run_tests: build
 	dtrace -s test_msgid.d -C -c ./test_msgid
 
 clean:
-	rm test_file_uuids
-	rm test_msgid
+	rm -f test_file_uuids
+	rm -f test_msgid
+	rm -f foo* bar*
